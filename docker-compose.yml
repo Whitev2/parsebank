@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile
     container_name: bank_parser
     ports:
-      - "80:80"
+      - "8080:8080"
     volumes:
       - ./app:/bankparser/app
 

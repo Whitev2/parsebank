@@ -15,7 +15,7 @@ WORKDIR /bankparser
 COPY ./app ./app
 
 
-EXPOSE 80
+EXPOSE 8080
 
-ENTRYPOINT ["uvicorn", "app.server:app", "--reload", "--host", "0.0.0.0", "--port", "80", "--access-log"]
+ENTRYPOINT ["uvicorn", "app.server:app", "--reload", "--host", "0.0.0.0", "--port", "8080", "--access-log"]
 #ENTRYPOINT ["ls"]
