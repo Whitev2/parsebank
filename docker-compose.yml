@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+
+  api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: bank_parser
+    ports:
+      - "80:80"
+    volumes:
+      - ./app:/bankparser/app
+
+networks:
+  net:
+    driver: bridge
