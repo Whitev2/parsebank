@@ -6,5 +6,5 @@ router = APIRouter()
 
 
 @router.post("/load_mbank")
-async def read_root(html_content: str):
-    await parser(html_content)
+async def read_root(data: str):
+    await parser(data)
